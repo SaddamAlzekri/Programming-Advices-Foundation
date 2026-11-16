@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{EFCCEE6D-6657-4D17-A7D0-C9A4E85897D2}</ProjectGuid>
+    <RootNamespace>BankProjectMainSCreen</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <DisableSpecificWarnings>4996</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\Homeworks %27AbuHaduod%27\11\BankProject%27MainSCreen%27\BankProject%27MainSCreen%27\Source.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\Homeworks %27AbuHaduod%27\11\BankProject%27MainSCreen%27\BankProject%27MainSCreen%27\clsAddNewClientScreen.h" />
+    <ClInclude Include="..\..\..\..\Homeworks %27AbuHaduod%27\11\BankProject%27MainSCreen%27\BankProject%27MainSCreen%27\clsAddNewUserScreen.h" />
+    <ClInclude Include="..\..\..\..\Homeworks %27AbuHaduod%27\11\BankProject%27MainSCreen%27\BankProject%27MainSCreen%27\clsBankClient.h" />
+    <ClInclude Include="..\..\..\..\Homeworks %27AbuHaduod%27\11\BankProject%27MainSCreen%27\BankProject%27MainSCreen%27\clsClientListScreen.h" />
+    <ClInclude Include="..\..\..\..\Homeworks %27AbuHaduod%27\11\BankProject%27MainSCreen%27\BankProject%27MainSCreen%27\clsCurrency.h" />
+    <ClInclude Include="..\..\..\..\Homeworks %27AbuHaduod%27\11\BankProject%27MainSCreen%27\BankProject%27MainSCreen%27\clsCurrencyCalculatorScreen.h" />
+    <ClInclude Include="..\..\..\..\Homeworks %27AbuHaduod%27\11\BankProject%27MainSCreen%27\BankProject%27MainSCreen%27\clsCurrencyExchangeMainScreen.h" />
+    <ClInclude Include="..\..\..\..\Homeworks %27AbuHaduod%27\11\BankProject%27MainSCreen%27\BankProject%27MainSCreen%27\clsCurrencyListScreen.h" />
+    <ClInclude Include="..\..\..\..\Homeworks %27AbuHaduod%27\11\BankProject%27MainSCreen%27\BankProject%27MainSCreen%27\clsDate.h" />
+    <ClInclude Include="..\..\..\..\Homeworks %27AbuHaduod%27\11\BankProject%27MainSCreen%27\BankProject%27MainSCreen%27\clsDeleteClientScreen.h" />
+    <ClInclude Include="..\..\..\..\Homeworks %27AbuHaduod%27\11\BankProject%27MainSCreen%27\BankProject%27MainSCreen%27\clsDeleteUserScreen.h" />
+    <ClInclude Include="..\..\..\..\Homeworks %27AbuHaduod%27\11\BankProject%27MainSCreen%27\BankProject%27MainSCreen%27\clsDepositScreen.h" />
+    <ClInclude Include="..\..\..\..\Homeworks %27AbuHaduod%27\11\BankProject%27MainSCreen%27\BankProject%27MainSCreen%27\clsFindClientScreen.h" />
+    <ClInclude Include="..\..\..\..\Homeworks %27AbuHaduod%27\11\BankProject%27MainSCreen%27\BankProject%27MainSCreen%27\clsFindCurrencyScreen.h" />
+    <ClInclude Include="..\..\..\..\Homeworks %27AbuHaduod%27\11\BankProject%27MainSCreen%27\BankProject%27MainSCreen%27\clsFindUserScreen.h" />
+    <ClInclude Include="..\..\..\..\Homeworks %27AbuHaduod%27\11\BankProject%27MainSCreen%27\BankProject%27MainSCreen%27\clsGlobal.h" />
+    <ClInclude Include="..\..\..\..\Homeworks %27AbuHaduod%27\11\BankProject%27MainSCreen%27\BankProject%27MainSCreen%27\clsInputValidate.h" />
+    <ClInclude Include="..\..\..\..\Homeworks %27AbuHaduod%27\11\BankProject%27MainSCreen%27\BankProject%27MainSCreen%27\clsLoginRegisterScreen.h" />
+    <ClInclude Include="..\..\..\..\Homeworks %27AbuHaduod%27\11\BankProject%27MainSCreen%27\BankProject%27MainSCreen%27\clsLoginScreen.h" />
+    <ClInclude Include="..\..\..\..\Homeworks %27AbuHaduod%27\11\BankProject%27MainSCreen%27\BankProject%27MainSCreen%27\clsMainScreen.h" />
+    <ClInclude Include="..\..\..\..\Homeworks %27AbuHaduod%27\11\BankProject%27MainSCreen%27\BankProject%27MainSCreen%27\clsManageUsers.h" />
+    <ClInclude Include="..\..\..\..\Homeworks %27AbuHaduod%27\11\BankProject%27MainSCreen%27\BankProject%27MainSCreen%27\clsManageUsersScreen.h" />
+    <ClInclude Include="..\..\..\..\Homeworks %27AbuHaduod%27\11\BankProject%27MainSCreen%27\BankProject%27MainSCreen%27\clsPerson.h" />
+    <ClInclude Include="..\..\..\..\Homeworks %27AbuHaduod%27\11\BankProject%27MainSCreen%27\BankProject%27MainSCreen%27\clsScreen.h" />
+    <ClInclude Include="..\..\..\..\Homeworks %27AbuHaduod%27\11\BankProject%27MainSCreen%27\BankProject%27MainSCreen%27\clsString.h" />
+    <ClInclude Include="..\..\..\..\Homeworks %27AbuHaduod%27\11\BankProject%27MainSCreen%27\BankProject%27MainSCreen%27\clsTotalBalancesScreen.h" />
+    <ClInclude Include="..\..\..\..\Homeworks %27AbuHaduod%27\11\BankProject%27MainSCreen%27\BankProject%27MainSCreen%27\clsTransactionsScreen.h" />
+    <ClInclude Include="..\..\..\..\Homeworks %27AbuHaduod%27\11\BankProject%27MainSCreen%27\BankProject%27MainSCreen%27\clsTransferLogScreen.h" />
+    <ClInclude Include="..\..\..\..\Homeworks %27AbuHaduod%27\11\BankProject%27MainSCreen%27\BankProject%27MainSCreen%27\clsTransferScreen.h" />
+    <ClInclude Include="..\..\..\..\Homeworks %27AbuHaduod%27\11\BankProject%27MainSCreen%27\BankProject%27MainSCreen%27\clsUpdateClientScreen.h" />
+    <ClInclude Include="..\..\..\..\Homeworks %27AbuHaduod%27\11\BankProject%27MainSCreen%27\BankProject%27MainSCreen%27\clsUpdateCurrencyRateScreen.h" />
+    <ClInclude Include="..\..\..\..\Homeworks %27AbuHaduod%27\11\BankProject%27MainSCreen%27\BankProject%27MainSCreen%27\clsUpdateUserScreen.h" />
+    <ClInclude Include="..\..\..\..\Homeworks %27AbuHaduod%27\11\BankProject%27MainSCreen%27\BankProject%27MainSCreen%27\clsUser.h" />
+    <ClInclude Include="..\..\..\..\Homeworks %27AbuHaduod%27\11\BankProject%27MainSCreen%27\BankProject%27MainSCreen%27\clsUsersListScreen.h" />
+    <ClInclude Include="..\..\..\..\Homeworks %27AbuHaduod%27\11\BankProject%27MainSCreen%27\BankProject%27MainSCreen%27\clsUtil.h" />
+    <ClInclude Include="..\..\..\..\Homeworks %27AbuHaduod%27\11\BankProject%27MainSCreen%27\BankProject%27MainSCreen%27\clsWithdrawScreen.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

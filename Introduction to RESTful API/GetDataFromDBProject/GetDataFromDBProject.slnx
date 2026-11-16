@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="GetDataFromDBProject/GetDataFromDBProject.csproj" />
+  <Project Path="StudentBusiness/StudentBusiness.csproj" />
+  <Project Path="StudentDataAccess/StudentDataAccess.csproj" />
+</Solution>

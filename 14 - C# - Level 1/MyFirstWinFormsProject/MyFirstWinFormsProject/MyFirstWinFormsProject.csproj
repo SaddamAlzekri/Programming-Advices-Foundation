@@ -1,0 +1,299 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{595C1273-766F-4D32-8B48-0A87C5BAD0A6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MyFirstWinFormsProject</RootNamespace>
+    <AssemblyName>MyFirstWinFormsProject</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCheckListBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCheckListBox.Designer.cs">
+      <DependentUpon>FrmCheckListBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmChkRadiogGroup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmChkRadiogGroup.Designer.cs">
+      <DependentUpon>FrmChkRadiogGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmComboBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmComboBox.Designer.cs">
+      <DependentUpon>FrmComboBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDateTimePicker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDateTimePicker.Designer.cs">
+      <DependentUpon>FrmDateTimePicker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDialog.Designer.cs">
+      <DependentUpon>FrmDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmGroupboxVSPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmGroupboxVSPanel.Designer.cs">
+      <DependentUpon>FrmGroupboxVSPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLinkLabel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLinkLabel.Designer.cs">
+      <DependentUpon>FrmLinkLabel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmListview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmListview.Designer.cs">
+      <DependentUpon>FrmListview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMain.Designer.cs">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMaskedBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMaskedBox.Designer.cs">
+      <DependentUpon>FrmMaskedBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMessageBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMessageBox.Designer.cs">
+      <DependentUpon>FrmMessageBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMonthCalendar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMonthCalendar.Designer.cs">
+      <DependentUpon>FrmMonthCalendar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmNotifyIcon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNotifyIcon.Designer.cs">
+      <DependentUpon>FrmNotifyIcon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPictureBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPictureBox.Designer.cs">
+      <DependentUpon>FrmPictureBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmProgressBar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmProgressBar.Designer.cs">
+      <DependentUpon>FrmProgressBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTabControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTabControl.Designer.cs">
+      <DependentUpon>FrmTabControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTextbox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTextbox.Designer.cs">
+      <DependentUpon>FrmTextbox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTimer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTimer.Designer.cs">
+      <DependentUpon>FrmTimer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTrackBar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTrackBar.Designer.cs">
+      <DependentUpon>FrmTrackBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTreeview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTreeview.Designer.cs">
+      <DependentUpon>FrmTreeview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PracticeAboutPictureBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PracticeAboutPictureBox.Designer.cs">
+      <DependentUpon>PracticeAboutPictureBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCheckListBox.resx">
+      <DependentUpon>FrmCheckListBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmChkRadiogGroup.resx">
+      <DependentUpon>FrmChkRadiogGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmComboBox.resx">
+      <DependentUpon>FrmComboBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDateTimePicker.resx">
+      <DependentUpon>FrmDateTimePicker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDialog.resx">
+      <DependentUpon>FrmDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmGroupboxVSPanel.resx">
+      <DependentUpon>FrmGroupboxVSPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLinkLabel.resx">
+      <DependentUpon>FrmLinkLabel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmListview.resx">
+      <DependentUpon>FrmListview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMain.resx">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMaskedBox.resx">
+      <DependentUpon>FrmMaskedBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMessageBox.resx">
+      <DependentUpon>FrmMessageBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMonthCalendar.resx">
+      <DependentUpon>FrmMonthCalendar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmNotifyIcon.resx">
+      <DependentUpon>FrmNotifyIcon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPictureBox.resx">
+      <DependentUpon>FrmPictureBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmProgressBar.resx">
+      <DependentUpon>FrmProgressBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTabControl.resx">
+      <DependentUpon>FrmTabControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTextbox.resx">
+      <DependentUpon>FrmTextbox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTimer.resx">
+      <DependentUpon>FrmTimer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTrackBar.resx">
+      <DependentUpon>FrmTrackBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTreeview.resx">
+      <DependentUpon>FrmTreeview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PracticeAboutPictureBox.resx">
+      <DependentUpon>PracticeAboutPictureBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Book.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Boy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Girl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\بيتزا-بالسلامي.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7800339.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imam-bro.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="ControlProject/ControlProject.csproj" Id="0e74e78d-7932-4f2e-8174-9e61d907ce02" />
+  <Project Path="MyFirstControlLibrary/MyFirstControlLibrary.csproj" Id="6cb1e448-f45f-4eb9-8192-7e70946ab40e" />
+</Solution>

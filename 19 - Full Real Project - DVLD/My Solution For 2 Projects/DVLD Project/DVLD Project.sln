@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DVLD", "DVLD\DVLD.csproj", "{CCCF51C4-C01E-45A9-9ADF-118B79B93342}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DVLD_DataAccess", "DVLD_DataAccess\DVLD_DataAccess.csproj", "{C42D2385-9889-437E-8B02-8CAC596929BF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DVLD_Business", "DVLD_Business\DVLD_Business.csproj", "{CA0D3446-BB63-42F7-A9C7-AA5BA3CD0306}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CCCF51C4-C01E-45A9-9ADF-118B79B93342}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCCF51C4-C01E-45A9-9ADF-118B79B93342}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCCF51C4-C01E-45A9-9ADF-118B79B93342}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCCF51C4-C01E-45A9-9ADF-118B79B93342}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C42D2385-9889-437E-8B02-8CAC596929BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C42D2385-9889-437E-8B02-8CAC596929BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C42D2385-9889-437E-8B02-8CAC596929BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C42D2385-9889-437E-8B02-8CAC596929BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA0D3446-BB63-42F7-A9C7-AA5BA3CD0306}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA0D3446-BB63-42F7-A9C7-AA5BA3CD0306}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA0D3446-BB63-42F7-A9C7-AA5BA3CD0306}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA0D3446-BB63-42F7-A9C7-AA5BA3CD0306}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

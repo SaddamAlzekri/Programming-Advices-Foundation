@@ -1,0 +1,2 @@
+A1234    1234    Saddam Alzekri    712126932    600 
+B1234    1234    Ali Alzekri    712126932    800   

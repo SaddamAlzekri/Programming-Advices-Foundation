@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Core">
+      <UniqueIdentifier>{e4e2c7be-f62f-48b8-8dc7-3c71f0fcc099}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Lib">
+      <UniqueIdentifier>{95091a54-ba2f-435d-9a2b-a3d723ce949b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Screen">
+      <UniqueIdentifier>{acb7eaa0-b070-4f03-8b61-9a6dc4ed166f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Screen\Client">
+      <UniqueIdentifier>{b39f32c2-d8ef-4528-8d66-7043c68316bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Screen\Currenies">
+      <UniqueIdentifier>{305debe3-6c74-483d-a9f2-e2a7fb47504f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Screen\User">
+      <UniqueIdentifier>{51d31d2f-e483-4b9d-ad6c-54b02359f3b0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\Homeworks %27AbuHaduod%27\11\BankProject%27MainSCreen%27\BankProject%27MainSCreen%27\Source.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\Homeworks %27AbuHaduod%27\11\BankProject%27MainSCreen%27\BankProject%27MainSCreen%27\clsGlobal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Homeworks %27AbuHaduod%27\11\BankProject%27MainSCreen%27\BankProject%27MainSCreen%27\clsBankClient.h">
+      <Filter>Header Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Homeworks %27AbuHaduod%27\11\BankProject%27MainSCreen%27\BankProject%27MainSCreen%27\clsCurrency.h">
+      <Filter>Header Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Homeworks %27AbuHaduod%27\11\BankProject%27MainSCreen%27\BankProject%27MainSCreen%27\clsPerson.h">
+      <Filter>Header Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Homeworks %27AbuHaduod%27\11\BankProject%27MainSCreen%27\BankProject%27MainSCreen%27\clsUser.h">
+      <Filter>Header Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Homeworks %27AbuHaduod%27\11\BankProject%27MainSCreen%27\BankProject%27MainSCreen%27\clsDate.h">
+      <Filter>Header Files\Lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Homeworks %27AbuHaduod%27\11\BankProject%27MainSCreen%27\BankProject%27MainSCreen%27\clsInputValidate.h">
+      <Filter>Header Files\Lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Homeworks %27AbuHaduod%27\11\BankProject%27MainSCreen%27\BankProject%27MainSCreen%27\clsScreen.h">
+      <Filter>Header Files\Lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Homeworks %27AbuHaduod%27\11\BankProject%27MainSCreen%27\BankProject%27MainSCreen%27\clsUtil.h">
+      <Filter>Header Files\Lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Homeworks %27AbuHaduod%27\11\BankProject%27MainSCreen%27\BankProject%27MainSCreen%27\clsAddNewClientScreen.h">
+      <Filter>Header Files\Screen\Client</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Homeworks %27AbuHaduod%27\11\BankProject%27MainSCreen%27\BankProject%27MainSCreen%27\clsClientListScreen.h">
+      <Filter>Header Files\Screen\Client</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Homeworks %27AbuHaduod%27\11\BankProject%27MainSCreen%27\BankProject%27MainSCreen%27\clsDeleteClientScreen.h">
+      <Filter>Header Files\Screen\Client</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Homeworks %27AbuHaduod%27\11\BankProject%27MainSCreen%27\BankProject%27MainSCreen%27\clsDepositScreen.h">
+      <Filter>Header Files\Screen\Client</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Homeworks %27AbuHaduod%27\11\BankProject%27MainSCreen%27\BankProject%27MainSCreen%27\clsFindClientScreen.h">
+      <Filter>Header Files\Screen\Client</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Homeworks %27AbuHaduod%27\11\BankProject%27MainSCreen%27\BankProject%27MainSCreen%27\clsTotalBalancesScreen.h">
+      <Filter>Header Files\Screen\Client</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Homeworks %27AbuHaduod%27\11\BankProject%27MainSCreen%27\BankProject%27MainSCreen%27\clsTransactionsScreen.h">
+      <Filter>Header Files\Screen\Client</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Homeworks %27AbuHaduod%27\11\BankProject%27MainSCreen%27\BankProject%27MainSCreen%27\clsTransferLogScreen.h">
+      <Filter>Header Files\Screen\Client</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Homeworks %27AbuHaduod%27\11\BankProject%27MainSCreen%27\BankProject%27MainSCreen%27\clsUpdateClientScreen.h">
+      <Filter>Header Files\Screen\Client</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Homeworks %27AbuHaduod%27\11\BankProject%27MainSCreen%27\BankProject%27MainSCreen%27\clsWithdrawScreen.h">
+      <Filter>Header Files\Screen\Client</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Homeworks %27AbuHaduod%27\11\BankProject%27MainSCreen%27\BankProject%27MainSCreen%27\clsCurrencyListScreen.h">
+      <Filter>Header Files\Screen\Currenies</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Homeworks %27AbuHaduod%27\11\BankProject%27MainSCreen%27\BankProject%27MainSCreen%27\clsCurrencyCalculatorScreen.h">
+      <Filter>Header Files\Screen\Currenies</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Homeworks %27AbuHaduod%27\11\BankProject%27MainSCreen%27\BankProject%27MainSCreen%27\clsCurrencyExchangeMainScreen.h">
+      <Filter>Header Files\Screen\Currenies</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Homeworks %27AbuHaduod%27\11\BankProject%27MainSCreen%27\BankProject%27MainSCreen%27\clsFindCurrencyScreen.h">
+      <Filter>Header Files\Screen\Currenies</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Homeworks %27AbuHaduod%27\11\BankProject%27MainSCreen%27\BankProject%27MainSCreen%27\clsUpdateCurrencyRateScreen.h">
+      <Filter>Header Files\Screen\Currenies</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Homeworks %27AbuHaduod%27\11\BankProject%27MainSCreen%27\BankProject%27MainSCreen%27\clsAddNewUserScreen.h">
+      <Filter>Header Files\Screen\User</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Homeworks %27AbuHaduod%27\11\BankProject%27MainSCreen%27\BankProject%27MainSCreen%27\clsDeleteUserScreen.h">
+      <Filter>Header Files\Screen\User</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Homeworks %27AbuHaduod%27\11\BankProject%27MainSCreen%27\BankProject%27MainSCreen%27\clsFindUserScreen.h">
+      <Filter>Header Files\Screen\User</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Homeworks %27AbuHaduod%27\11\BankProject%27MainSCreen%27\BankProject%27MainSCreen%27\clsLoginRegisterScreen.h">
+      <Filter>Header Files\Screen\User</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Homeworks %27AbuHaduod%27\11\BankProject%27MainSCreen%27\BankProject%27MainSCreen%27\clsLoginScreen.h">
+      <Filter>Header Files\Screen\User</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Homeworks %27AbuHaduod%27\11\BankProject%27MainSCreen%27\BankProject%27MainSCreen%27\clsMainScreen.h">
+      <Filter>Header Files\Screen\User</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Homeworks %27AbuHaduod%27\11\BankProject%27MainSCreen%27\BankProject%27MainSCreen%27\clsManageUsers.h">
+      <Filter>Header Files\Screen\User</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Homeworks %27AbuHaduod%27\11\BankProject%27MainSCreen%27\BankProject%27MainSCreen%27\clsManageUsersScreen.h">
+      <Filter>Header Files\Screen\User</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Homeworks %27AbuHaduod%27\11\BankProject%27MainSCreen%27\BankProject%27MainSCreen%27\clsString.h">
+      <Filter>Header Files\Screen\User</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Homeworks %27AbuHaduod%27\11\BankProject%27MainSCreen%27\BankProject%27MainSCreen%27\clsTransferScreen.h">
+      <Filter>Header Files\Screen\User</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Homeworks %27AbuHaduod%27\11\BankProject%27MainSCreen%27\BankProject%27MainSCreen%27\clsUpdateUserScreen.h">
+      <Filter>Header Files\Screen\User</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Homeworks %27AbuHaduod%27\11\BankProject%27MainSCreen%27\BankProject%27MainSCreen%27\clsUsersListScreen.h">
+      <Filter>Header Files\Screen\User</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

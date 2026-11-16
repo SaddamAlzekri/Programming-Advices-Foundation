@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Problem33''FillArrayWithKey", "Problem33''FillArrayWithKey\Problem33''FillArrayWithKey.vcxproj", "{CC3D6340-C1FD-49C2-B496-7DE5293DB05A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CC3D6340-C1FD-49C2-B496-7DE5293DB05A}.Debug|Win32.ActiveCfg = Debug|Win32
+		{CC3D6340-C1FD-49C2-B496-7DE5293DB05A}.Debug|Win32.Build.0 = Debug|Win32
+		{CC3D6340-C1FD-49C2-B496-7DE5293DB05A}.Release|Win32.ActiveCfg = Release|Win32
+		{CC3D6340-C1FD-49C2-B496-7DE5293DB05A}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

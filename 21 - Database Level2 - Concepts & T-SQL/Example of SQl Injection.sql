@@ -1,0 +1,6 @@
+
+DECLARE @SQL NVARCHAR(MAX);
+
+SET @SQL = 'SELECT *FROM Students WHERE StudentID = 1 or 1 = 1';
+
+EXEC(@SQl);

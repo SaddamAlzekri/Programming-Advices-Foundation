@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Problem42'CountOddNumber...'", "Problem42'CountOddNumber...'\Problem42'CountOddNumber...'.vcxproj", "{EDFE0F54-52EA-44C9-98D6-6B286B843B6F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EDFE0F54-52EA-44C9-98D6-6B286B843B6F}.Debug|Win32.ActiveCfg = Debug|Win32
+		{EDFE0F54-52EA-44C9-98D6-6B286B843B6F}.Debug|Win32.Build.0 = Debug|Win32
+		{EDFE0F54-52EA-44C9-98D6-6B286B843B6F}.Release|Win32.ActiveCfg = Release|Win32
+		{EDFE0F54-52EA-44C9-98D6-6B286B843B6F}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

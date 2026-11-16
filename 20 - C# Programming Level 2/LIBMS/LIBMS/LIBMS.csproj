@@ -1,0 +1,1017 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D34BC8F9-EED9-4468-A1CB-E73AB017C525}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LIBMS</RootNamespace>
+    <AssemblyName>LIBMS</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AxShockwaveFlashObjects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="Functionality">
+      <HintPath>E:\Homeworks 'AbuHaduod'\20\Functionality\Functionality\obj\Debug\Functionality.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Books\frmAddUpdateBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Books\frmAddUpdateBook.Designer.cs">
+      <DependentUpon>frmAddUpdateBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Books\frmListBooks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Books\frmListBooks.Designer.cs">
+      <DependentUpon>frmListBooks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Books\frmShowBookInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Books\frmShowBookInfo.Designer.cs">
+      <DependentUpon>frmShowBookInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Categories\frmAddUpdateCategories.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Categories\frmAddUpdateCategories.Designer.cs">
+      <DependentUpon>frmAddUpdateCategories.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Categories\frmListCategories.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Categories\frmListCategories.Designer.cs">
+      <DependentUpon>frmListCategories.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gloal Classes\clsGlobal.cs" />
+    <Compile Include="Gloal Classes\clsUtil.cs" />
+    <Compile Include="Gloal Classes\clsValidation.cs" />
+    <Compile Include="LibraryAccessing\frmAddUpdateLibraryAccessing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LibraryAccessing\frmAddUpdateLibraryAccessing.Designer.cs">
+      <DependentUpon>frmAddUpdateLibraryAccessing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LibraryAccessing\frmLibraryAccessingList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LibraryAccessing\frmLibraryAccessingList.Designer.cs">
+      <DependentUpon>frmLibraryAccessingList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login\frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login\frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Package\frmListMembershipPackage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Package\frmListMembershipPackage.Designer.cs">
+      <DependentUpon>frmListMembershipPackage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Package\frmUpdateMembershipPackage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Package\frmUpdateMembershipPackage.Designer.cs">
+      <DependentUpon>frmUpdateMembershipPackage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="People\Controls\ctrlPersonCard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="People\Controls\ctrlPersonCard.Designer.cs">
+      <DependentUpon>ctrlPersonCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="People\Controls\ctrlPersonCardWithFilter.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="People\Controls\ctrlPersonCardWithFilter.Designer.cs">
+      <DependentUpon>ctrlPersonCardWithFilter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="People\frmAddUpdatePeople.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="People\frmAddUpdatePeople.Designer.cs">
+      <DependentUpon>frmAddUpdatePeople.cs</DependentUpon>
+    </Compile>
+    <Compile Include="People\frmFindPerson.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="People\frmFindPerson.Designer.cs">
+      <DependentUpon>frmFindPerson.cs</DependentUpon>
+    </Compile>
+    <Compile Include="People\frmListPeople.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="People\frmListPeople.Designer.cs">
+      <DependentUpon>frmListPeople.cs</DependentUpon>
+    </Compile>
+    <Compile Include="People\frmShowPersonInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="People\frmShowPersonInfo.Designer.cs">
+      <DependentUpon>frmShowPersonInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="People\Members\ctrlMemberShipID.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="People\Members\ctrlMemberShipID.Designer.cs">
+      <DependentUpon>ctrlMemberShipID.cs</DependentUpon>
+    </Compile>
+    <Compile Include="People\Members\frmAddUpdateMembers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="People\Members\frmAddUpdateMembers.Designer.cs">
+      <DependentUpon>frmAddUpdateMembers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="People\Members\frmListMembers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="People\Members\frmListMembers.Designer.cs">
+      <DependentUpon>frmListMembers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="People\Members\frmShowMemberCard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="People\Members\frmShowMemberCard.Designer.cs">
+      <DependentUpon>frmShowMemberCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="People\Members\frmShowPersonInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="People\Members\frmShowPersonInfo.Designer.cs">
+      <DependentUpon>frmShowPersonInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="People\Users\Controls\ctrlUserCard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="People\Users\Controls\ctrlUserCard.Designer.cs">
+      <DependentUpon>ctrlUserCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="People\Users\frmAddUpdateUsers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="People\Users\frmAddUpdateUsers.Designer.cs">
+      <DependentUpon>frmAddUpdateUsers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="People\Users\frmChanngePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="People\Users\frmChanngePassword.Designer.cs">
+      <DependentUpon>frmChanngePassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="People\Users\frmListUsers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="People\Users\frmListUsers.Designer.cs">
+      <DependentUpon>frmListUsers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="People\Users\frmUserInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="People\Users\frmUserInfo.Designer.cs">
+      <DependentUpon>frmUserInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reading Session\ctrlMemberInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Reading Session\ctrlMemberInfo.Designer.cs">
+      <DependentUpon>ctrlMemberInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reading Session\frmAddUpdateReadingSession.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reading Session\frmAddUpdateReadingSession.Designer.cs">
+      <DependentUpon>frmAddUpdateReadingSession.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reading Session\frmCancelOfReadingSession.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reading Session\frmCancelOfReadingSession.Designer.cs">
+      <DependentUpon>frmCancelOfReadingSession.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reading Session\frmListReadingSession.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reading Session\frmListReadingSession.Designer.cs">
+      <DependentUpon>frmListReadingSession.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reading Session\frmShowBookInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reading Session\frmShowBookInfo.Designer.cs">
+      <DependentUpon>frmShowBookInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReservationOfRooms\frmAddUpdateReservationRooms.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReservationOfRooms\frmAddUpdateReservationRooms.Designer.cs">
+      <DependentUpon>frmAddUpdateReservationRooms.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReservationOfRooms\frmReservationRoomList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReservationOfRooms\frmReservationRoomList.Designer.cs">
+      <DependentUpon>frmReservationRoomList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReservationOfRooms\frmRoomLData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReservationOfRooms\frmRoomLData.Designer.cs">
+      <DependentUpon>frmRoomLData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Returns\DataSet1.cs">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Returns\DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Returns\ReturnReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReturnReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Returns\frmAddUpdateBookReturn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Returns\frmAddUpdateBookReturn.Designer.cs">
+      <DependentUpon>frmAddUpdateBookReturn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Returns\frmBookReturnList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Returns\frmBookReturnList.Designer.cs">
+      <DependentUpon>frmBookReturnList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Returns\frmReturnReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Returns\frmReturnReport.Designer.cs">
+      <DependentUpon>frmReturnReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rooms\frmAddUpdateRooms.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rooms\frmAddUpdateRooms.Designer.cs">
+      <DependentUpon>frmAddUpdateRooms.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rooms\frmRoomList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rooms\frmRoomList.Designer.cs">
+      <DependentUpon>frmRoomList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sale\Sale_Report\DataSet2.cs">
+      <DependentUpon>DataSet2.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Sale\Sale_Report\DataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Sale\Sale_Report\SaleReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SaleReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Sale\frmAddUpdateBookSale.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sale\frmAddUpdateBookSale.Designer.cs">
+      <DependentUpon>frmAddUpdateBookSale.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sale\frmBookItemsShow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sale\frmBookItemsShow.Designer.cs">
+      <DependentUpon>frmBookItemsShow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sale\frmBookSaleList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sale\frmBookSaleList.Designer.cs">
+      <DependentUpon>frmBookSaleList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sale\frmCustomersShow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sale\frmCustomersShow.Designer.cs">
+      <DependentUpon>frmCustomersShow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sale\Sale_Report\frmSaleReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sale\Sale_Report\frmSaleReport.Designer.cs">
+      <DependentUpon>frmSaleReport.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Books\frmAddUpdateBook.resx">
+      <DependentUpon>frmAddUpdateBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Books\frmListBooks.resx">
+      <DependentUpon>frmListBooks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Books\frmShowBookInfo.resx">
+      <DependentUpon>frmShowBookInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Categories\frmAddUpdateCategories.resx">
+      <DependentUpon>frmAddUpdateCategories.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Categories\frmListCategories.resx">
+      <DependentUpon>frmListCategories.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LibraryAccessing\frmAddUpdateLibraryAccessing.resx">
+      <DependentUpon>frmAddUpdateLibraryAccessing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LibraryAccessing\frmLibraryAccessingList.resx">
+      <DependentUpon>frmLibraryAccessingList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login\frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Package\frmListMembershipPackage.resx">
+      <DependentUpon>frmListMembershipPackage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Package\frmUpdateMembershipPackage.resx">
+      <DependentUpon>frmUpdateMembershipPackage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="People\Controls\ctrlPersonCard.resx">
+      <DependentUpon>ctrlPersonCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="People\Controls\ctrlPersonCardWithFilter.resx">
+      <DependentUpon>ctrlPersonCardWithFilter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="People\frmAddUpdatePeople.resx">
+      <DependentUpon>frmAddUpdatePeople.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="People\frmFindPerson.resx">
+      <DependentUpon>frmFindPerson.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="People\frmListPeople.resx">
+      <DependentUpon>frmListPeople.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="People\frmShowPersonInfo.resx">
+      <DependentUpon>frmShowPersonInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="People\Members\ctrlMemberShipID.resx">
+      <DependentUpon>ctrlMemberShipID.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="People\Members\frmAddUpdateMembers.resx">
+      <DependentUpon>frmAddUpdateMembers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="People\Members\frmListMembers.resx">
+      <DependentUpon>frmListMembers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="People\Members\frmShowMemberCard.resx">
+      <DependentUpon>frmShowMemberCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="People\Members\frmShowPersonInfo.resx">
+      <DependentUpon>frmShowPersonInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="People\Users\Controls\ctrlUserCard.resx">
+      <DependentUpon>ctrlUserCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="People\Users\frmAddUpdateUsers.resx">
+      <DependentUpon>frmAddUpdateUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="People\Users\frmChanngePassword.resx">
+      <DependentUpon>frmChanngePassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="People\Users\frmListUsers.resx">
+      <DependentUpon>frmListUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="People\Users\frmUserInfo.resx">
+      <DependentUpon>frmUserInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Reading Session\ctrlMemberInfo.resx">
+      <DependentUpon>ctrlMemberInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reading Session\frmAddUpdateReadingSession.resx">
+      <DependentUpon>frmAddUpdateReadingSession.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reading Session\frmCancelOfReadingSession.resx">
+      <DependentUpon>frmCancelOfReadingSession.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reading Session\frmListReadingSession.resx">
+      <DependentUpon>frmListReadingSession.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reading Session\frmShowBookInfo.resx">
+      <DependentUpon>frmShowBookInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReservationOfRooms\frmAddUpdateReservationRooms.resx">
+      <DependentUpon>frmAddUpdateReservationRooms.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReservationOfRooms\frmReservationRoomList.resx">
+      <DependentUpon>frmReservationRoomList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReservationOfRooms\frmRoomLData.resx">
+      <DependentUpon>frmRoomLData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Returns\frmAddUpdateBookReturn.resx">
+      <DependentUpon>frmAddUpdateBookReturn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Returns\frmBookReturnList.resx">
+      <DependentUpon>frmBookReturnList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Returns\ReturnReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReturnReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Returns\frmReturnReport.resx">
+      <DependentUpon>frmReturnReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rooms\frmAddUpdateRooms.resx">
+      <DependentUpon>frmAddUpdateRooms.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rooms\frmRoomList.resx">
+      <DependentUpon>frmRoomList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sale\Sale_Report\SaleReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SaleReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sale\frmAddUpdateBookSale.resx">
+      <DependentUpon>frmAddUpdateBookSale.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sale\frmBookItemsShow.resx">
+      <DependentUpon>frmBookItemsShow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sale\frmBookSaleList.resx">
+      <DependentUpon>frmBookSaleList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sale\frmCustomersShow.resx">
+      <DependentUpon>frmCustomersShow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sale\Sale_Report\frmSaleReport.resx">
+      <DependentUpon>frmSaleReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Returns\DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Returns\DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Returns\DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Sale\Sale_Report\DataSet2.xsc">
+      <DependentUpon>DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Sale\Sale_Report\DataSet2.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet2.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Sale\Sale_Report\DataSet2.xss">
+      <DependentUpon>DataSet2.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\at_phone.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LIBMS.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\at-sign.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\block_12643047.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bookmark Book.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bookmark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Books.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Borrow Book.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\browser.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Business Man in Blue Jacket.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calculator_buttons.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\call.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancelled_5167616.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\card %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\card %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\card.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Categorize.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Close2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Collapse.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\control-system %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\control-system.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Customer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Data management.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete_delete_deleteusers_delete_male_user_maleclient_2348 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete_delete_deleteusers_delete_male_user_maleclient_2348.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\diskette %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\diskette %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\diskette.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\document_5131313.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\driver.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\driving-license.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\email_2164894.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exam.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eyevision_122854.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\find_6217702.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\graphic_report %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\graphic_report %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\graphic_report %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\graphic_report.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-add-user-male-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-businesswoman-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-businesswoman-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-close-program-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-home-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-home-address-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-home-address-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-menu-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-menu-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-people-48 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-people-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-people-94 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-people-94.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-person-48 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-person-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-person-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-report-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-report-file-94.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-stop-hand-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Infinity%401x-1.0s-200px-200px.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Info.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\istockphoto-691286862-1024x1024.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login_7854874.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login_7856126.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\management %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\management_3165611.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Manager.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Maximize Window.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\medical-report_1560808 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Menu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Menu2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Minimize Window.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Minus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\money.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page_number.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\password_config.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pedestrian_traffic_light_stop2 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pedestrian_traffic_light_stop2 %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pedestrian_traffic_light_stop2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\people_16001659.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\phone_vintage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Plus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\program-error_644679.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\report.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reporter_female %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reporter_female %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reporter_female.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reporting.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reports_config.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rolling%401x-1.0s-200px-200px %281%29.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rolling%401x-1.0s-200px-200px.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\safety_reader_card_10784 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\safety_reader_card_10784.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sell.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sign_stop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Spinner%401x-1.0s-200px-200px.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Student Male.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\task_report.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\test_4838858.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\test_13972577.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test-paper_35744.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TestWritten.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\toggle-buttons_18989276.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Users.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vision_view_eye_icon_153887.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\world.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LIBMS2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\book.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\book %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\book exchange.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login_5176266.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\meeting_15986297.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reading-book_12571730.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Return book.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sale.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\signboard_4992484.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stack-of-books.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\work-group_10748531.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\number-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LIBMS_Business\LIBMS_Business.csproj">
+      <Project>{34816fb9-d61f-42cc-9a49-7447ef118c85}</Project>
+      <Name>LIBMS_Business</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Image1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add-user_16765670.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Members48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exam48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\contract.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\number-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\number-3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_8571470.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\printer_3022251.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\updated_5334981.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\application.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %288%29.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\realistic-books-shelf-library.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %289%29.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancelled48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\تنزيل.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clear.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\check.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\contract1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\invoice.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\return-on-investment.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\check1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\check %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\check2.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

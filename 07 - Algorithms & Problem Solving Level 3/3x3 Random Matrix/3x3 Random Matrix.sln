@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "3x3 Random Matrix", "3x3 Random Matrix\3x3 Random Matrix.vcxproj", "{5E68C5A4-FC9C-4F69-B5AA-4DF8BFD1141C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5E68C5A4-FC9C-4F69-B5AA-4DF8BFD1141C}.Debug|Win32.ActiveCfg = Debug|Win32
+		{5E68C5A4-FC9C-4F69-B5AA-4DF8BFD1141C}.Debug|Win32.Build.0 = Debug|Win32
+		{5E68C5A4-FC9C-4F69-B5AA-4DF8BFD1141C}.Release|Win32.ActiveCfg = Release|Win32
+		{5E68C5A4-FC9C-4F69-B5AA-4DF8BFD1141C}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

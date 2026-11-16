@@ -1,0 +1,15 @@
+SELECT LEN(FirstName) FROM People;
+SELECT UPPER(FirstName) FROM People;
+SELECT LOWER(FirstName) FROM People;
+SELECT SUBSTRING(FirstName, 1 ,3 ) FROM People;
+SELECT CHARINDEX( 'M', FirstName) FROM People;
+SELECT CHARINDEX( 'M', FirstName) FROM People;
+SELECT REPLACE(FirstName, 'XX', 'dd') FROM People;
+SELECT CONCAT(FirstName, '_', LastName) FROM People;
+SELECT CONCAT(LOWER(FirstName), '-XX-', lower(LastName)) from People;
+SELECT Right(FirstName, 3) FROM People;
+SELECT LEFT(FirstName, 3) FROM People;
+SELECT lTRIM(FirstName, 3) FROM People;
+SELECT RtRIM(FirstName, 3) FROM People;
+SELECT TRIM(FirstName) FROM People;
+SELECT lTRIM(rTrim(FirstName), 3) FROM People;

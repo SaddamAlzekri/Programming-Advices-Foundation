@@ -1,0 +1,62 @@
+# Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build Results
+[Bb]in/
+[Oo]bj/
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+
+# Visual Studio Cache
+*.cache
+*.opendb
+*.VC.db
+
+# User-specific files
+*.rsuser
+*.sln.ide
+
+# Test Results
+[Tt]est[Rr]esult*/
+[Bb]uild[Ll]og.*
+
+# NuGet
+*.nupkg
+*.snupkg
+.nuget/packages/
+
+# Publish Output
+publish/
+[Pp]ublish*/
+
+# Logs
+*.log
+
+# Temporary Files
+*.tmp
+*.temp
+*.bak
+
+# Operating System
+Thumbs.db
+.DS_Store
+desktop.ini
+
+# SQL Server Local Files
+*.mdf
+*.ldf
+
+# Database Backups
+*.bak
+*.trn
+
+# Sensitive Configuration
+appsettings.Development.json

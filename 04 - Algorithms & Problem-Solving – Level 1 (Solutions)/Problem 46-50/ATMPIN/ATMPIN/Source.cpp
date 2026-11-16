@@ -1,0 +1,40 @@
+#include<iostream>
+#include<conio.h>
+#include<string>
+using namespace std;
+
+string ReadPincode()
+{
+	string PinCode;
+	cout << "Please Enter PinCode.\n";
+	cin >> PinCode;
+	return PinCode;
+}
+
+bool Login()
+{
+	string PinCode;
+	do
+	{
+		PinCode = ReadPincode();
+		if (PinCode == "1234")
+		{
+			return 1;
+		}
+		else
+		{
+			cout << "\nWrong PIN\n";
+			system("color 4F");
+		}
+	} while (PinCode != "1234");
+}
+int main()
+{
+	if (Login())
+	{
+		system("color 2F");
+		cout << "\nYour account balance is " << 7500 << endl;
+	}
+	_getch();
+	return 0;
+}
