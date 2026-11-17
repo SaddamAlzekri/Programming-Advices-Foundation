@@ -59,4 +59,4 @@ desktop.ini
 *.trn
 
 # Sensitive Configuration
-appsettings.Development.json
+appsettings.Development.json"*.sdf" 
